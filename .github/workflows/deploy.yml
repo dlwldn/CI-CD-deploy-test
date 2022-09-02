@@ -13,11 +13,8 @@ jobs:
     - run: |
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
+          else [ -e package-lock.json ]; then
           npm ci
-          else
-          npm i
-          fi
     - run: npm run build
     - name: deploy to s3 bucket
       uses: jakejarvis/s3-sync-action@master

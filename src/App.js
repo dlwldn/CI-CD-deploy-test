@@ -9,6 +9,7 @@ function App() {
         <p>
           deploy!!!!
           자동배포 되나?
+          포포
         </p>
         <a
           className="App-link"
