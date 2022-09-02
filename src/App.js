@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           deploy!!!!
+          자동배포 되나?
         </p>
         <a
           className="App-link"
